@@ -1,0 +1,2332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SLV Enterprises – Industrial Electrical, Automation & Fasteners Supplier</title>
+    <meta name="description" content="SLV Enterprises is a trusted B2B supplier of industrial fasteners, electrical components, automation products, cutting tools, safety items, bearings, and engineering consumables." />
+    <meta property="og:title" content="SLV Enterprises – Industrial Electrical, Automation & Fasteners" />
+    <meta property="og:description" content="Complete industrial product solutions from fasteners to automation. Trusted by construction, automotive, infrastructure and engineering industries." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+
+    <style>
+        /* ===== RESET & BASE ===== */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root {
+            --primary: #0b1e33;
+            --primary-light: #1a3a5c;
+            --secondary: #e8a81e;
+            --secondary-dark: #c9921a;
+            --accent: #d4880f;
+            --white: #ffffff;
+            --light: #f5f7fa;
+            --gray: #e9edf2;
+            --gray-dark: #7a8a9e;
+            --text: #1a2634;
+            --text-light: #4a5a6e;
+            --shadow: 0 8px 32px rgba(0, 0, 0, 0.07);
+            --shadow-hover: 0 16px 48px rgba(0, 0, 0, 0.13);
+            --radius: 12px;
+            --radius-lg: 20px;
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: var(--font);
+            color: var(--text);
+            background: var(--white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+        }
+        ul {
+            list-style: none;
+        }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        .section-tag {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--secondary);
+            background: rgba(232, 168, 30, 0.12);
+            padding: 4px 16px;
+            border-radius: 50px;
+            margin-bottom: 10px;
+        }
+        .section-title {
+            font-size: 2.4rem;
+            font-weight: 800;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            color: var(--primary);
+        }
+        .section-title span {
+            color: var(--secondary);
+        }
+        .section-sub {
+            font-size: 1.05rem;
+            color: var(--text-light);
+            max-width: 640px;
+            margin-top: 10px;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-family: var(--font);
+            font-weight: 600;
+            font-size: 0.92rem;
+            padding: 13px 28px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: var(--transition);
+            justify-content: center;
+            background: var(--gray);
+            color: var(--text);
+        }
+        .btn-primary {
+            background: var(--secondary);
+            color: var(--primary);
+        }
+        .btn-primary:hover {
+            background: var(--secondary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(232, 168, 30, 0.35);
+        }
+        .btn-secondary {
+            background: var(--primary);
+            color: var(--white);
+        }
+        .btn-secondary:hover {
+            background: var(--primary-light);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(11, 30, 51, 0.3);
+        }
+        .btn-outline {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+        .btn-outline:hover {
+            background: var(--primary);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+        .btn-whatsapp {
+            background: #25d366;
+            color: var(--white);
+        }
+        .btn-whatsapp:hover {
+            background: #1da851;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(37, 211, 102, 0.35);
+        }
+        .btn-sm {
+            padding: 9px 18px;
+            font-size: 0.8rem;
+        }
+        .btn-lg {
+            padding: 17px 38px;
+            font-size: 1rem;
+        }
+        .btn-block {
+            width: 100%;
+            justify-content: center;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+        header.scrolled {
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.07);
+        }
+        .nav-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 72px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+        .logo-icon {
+            background: var(--primary);
+            color: var(--secondary);
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1rem;
+            letter-spacing: 0.05em;
+        }
+        .logo-icon i {
+            font-size: 1.3rem;
+            margin-right: 2px;
+        }
+        .logo-text {
+            font-weight: 800;
+            font-size: 1.1rem;
+            color: var(--primary);
+            line-height: 1.2;
+        }
+        .logo-text span {
+            color: var(--secondary);
+            display: block;
+            font-size: 0.6rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            margin-top: -2px;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .nav-links a {
+            font-weight: 500;
+            font-size: 0.85rem;
+            color: var(--text);
+            padding: 8px 14px;
+            border-radius: 8px;
+            transition: var(--transition);
+        }
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--secondary);
+            background: rgba(232, 168, 30, 0.08);
+        }
+        .nav-cta {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-left: 10px;
+        }
+        .nav-cta .btn {
+            padding: 9px 18px;
+            font-size: 0.8rem;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 4px;
+            background: none;
+            border: none;
+        }
+        .hamburger span {
+            width: 28px;
+            height: 3px;
+            background: var(--primary);
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            padding: 130px 0 70px;
+            background: linear-gradient(145deg, #f0f4f9 0%, #dce3ec 100%);
+            position: relative;
+            overflow: hidden;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            right: -10%;
+            top: -20%;
+            width: 60%;
+            height: 140%;
+            background: radial-gradient(ellipse, rgba(232, 168, 30, 0.07) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+        .hero-content h1 {
+            font-size: 3.6rem;
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            color: var(--primary);
+        }
+        .hero-content h1 span {
+            color: var(--secondary);
+        }
+        .hero-content p {
+            font-size: 1.15rem;
+            color: var(--text-light);
+            margin: 18px 0 30px;
+            max-width: 540px;
+            line-height: 1.7;
+        }
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-image .img-wrapper {
+            width: 100%;
+            max-width: 560px;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-hover);
+            aspect-ratio: 4/3;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            position: relative;
+        }
+        .hero-image .img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.85;
+        }
+        .hero-image .img-wrapper .overlay-icon {
+            position: absolute;
+            font-size: 5rem;
+            color: rgba(255, 255, 255, 0.12);
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(232, 168, 30, 0.15);
+            color: var(--secondary-dark);
+            padding: 5px 16px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.8rem;
+            margin-bottom: 14px;
+        }
+
+        /* ===== CATEGORIES ===== */
+        .categories {
+            padding: 70px 0;
+            background: var(--white);
+        }
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 18px;
+            margin-top: 36px;
+        }
+        .cat-card {
+            background: var(--light);
+            padding: 24px 16px;
+            border-radius: var(--radius);
+            text-align: center;
+            transition: var(--transition);
+            cursor: pointer;
+            border: 1px solid transparent;
+        }
+        .cat-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--secondary);
+            background: var(--white);
+        }
+        .cat-card img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 10px;
+            background: var(--gray);
+        }
+        .cat-card i {
+            font-size: 2.4rem;
+            color: var(--secondary);
+            margin-bottom: 10px;
+            display: block;
+        }
+        .cat-card h4 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+        .cat-card small {
+            display: block;
+            font-size: 0.7rem;
+            color: var(--text-light);
+            margin-top: 3px;
+        }
+
+        /* ===== PRODUCTS ===== */
+        .products-section {
+            padding: 70px 0;
+            background: var(--light);
+        }
+        .products-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap: 18px;
+            margin-bottom: 36px;
+        }
+        .search-filter {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            width: 100%;
+            max-width: 720px;
+        }
+        .search-filter input,
+        .search-filter select {
+            font-family: var(--font);
+            padding: 11px 16px;
+            border: 1px solid #d1d9e6;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            background: var(--white);
+            transition: var(--transition);
+            flex: 1;
+            min-width: 140px;
+        }
+        .search-filter input:focus,
+        .search-filter select:focus {
+            outline: none;
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 3px rgba(232, 168, 30, 0.15);
+        }
+        .search-filter .btn {
+            flex-shrink: 0;
+            padding: 11px 24px;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 24px;
+            margin-top: 6px;
+        }
+        .product-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-hover);
+        }
+        .product-card .img-box {
+            height: 180px;
+            background: var(--gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.2rem;
+            color: var(--primary-light);
+            position: relative;
+            background: linear-gradient(145deg, #f0f4f9, #e2e8f0);
+            overflow: hidden;
+        }
+        .product-card .img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .product-card .img-box .fallback-icon {
+            font-size: 3.2rem;
+            color: var(--primary-light);
+            opacity: 0.5;
+        }
+        .product-card .body {
+            padding: 18px 20px 22px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card .body .cat-tag {
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--secondary);
+            background: rgba(232, 168, 30, 0.1);
+            padding: 2px 12px;
+            border-radius: 50px;
+            display: inline-block;
+            align-self: flex-start;
+            margin-bottom: 6px;
+        }
+        .product-card .body h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+        .product-card .body p {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-bottom: 10px;
+            flex: 1;
+        }
+        .product-card .body .specs {
+            font-size: 0.75rem;
+            color: var(--gray-dark);
+            margin-bottom: 14px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px 12px;
+        }
+        .product-card .body .specs i {
+            color: var(--secondary);
+            margin-right: 4px;
+        }
+        .product-card .body .actions {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: auto;
+        }
+        .product-card .body .actions .btn {
+            flex: 1;
+            padding: 8px 14px;
+            font-size: 0.75rem;
+            justify-content: center;
+            min-width: 70px;
+        }
+
+        /* ===== WHY US ===== */
+        .why-us {
+            padding: 70px 0;
+            background: var(--white);
+        }
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+            gap: 28px;
+            margin-top: 36px;
+        }
+        .why-card {
+            text-align: center;
+            padding: 28px 18px;
+            border-radius: var(--radius);
+            background: var(--light);
+            transition: var(--transition);
+            border: 1px solid transparent;
+        }
+        .why-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow);
+            border-color: var(--secondary);
+        }
+        .why-card i {
+            font-size: 2.4rem;
+            color: var(--secondary);
+            margin-bottom: 14px;
+            display: block;
+        }
+        .why-card h4 {
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--primary);
+        }
+        .why-card p {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-top: 5px;
+        }
+
+        /* ===== INDUSTRIES ===== */
+        .industries {
+            padding: 70px 0;
+            background: var(--light);
+        }
+        .industries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 14px;
+            margin-top: 36px;
+        }
+        .industry-chip {
+            background: var(--white);
+            padding: 14px 18px;
+            border-radius: 50px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--primary);
+            border: 1px solid #e2e8f0;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            cursor: default;
+        }
+        .industry-chip i {
+            color: var(--secondary);
+            font-size: 1rem;
+        }
+        .industry-chip:hover {
+            border-color: var(--secondary);
+            background: rgba(232, 168, 30, 0.05);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+
+        /* ===== SOLUTIONS ===== */
+        .solutions {
+            padding: 70px 0;
+            background: var(--white);
+        }
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 28px;
+            margin-top: 36px;
+        }
+        .solution-card {
+            background: var(--light);
+            padding: 28px 24px;
+            border-radius: var(--radius);
+            border-left: 4px solid var(--secondary);
+            transition: var(--transition);
+        }
+        .solution-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow);
+        }
+        .solution-card i {
+            font-size: 2rem;
+            color: var(--secondary);
+            margin-bottom: 12px;
+            display: block;
+        }
+        .solution-card h4 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        .solution-card p {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-top: 5px;
+        }
+
+        /* ===== BRANDS ===== */
+        .brands {
+            padding: 50px 0;
+            background: var(--light);
+            border-top: 1px solid #e2e8f0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .brands-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px 44px;
+            margin-top: 18px;
+            opacity: 0.8;
+        }
+        .brands-grid .brand-item {
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .brands-grid .brand-item i {
+            color: var(--secondary);
+            font-size: 1.2rem;
+        }
+
+        /* ===== CUSTOMERS ===== */
+        .customers {
+            padding: 50px 0;
+            background: var(--white);
+        }
+        .customers-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px 36px;
+            margin-top: 28px;
+        }
+        .customer-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--primary);
+            background: var(--light);
+            padding: 10px 24px;
+            border-radius: 50px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid transparent;
+        }
+        .customer-logo:hover {
+            transform: translateY(-3px);
+            border-color: var(--secondary);
+            box-shadow: var(--shadow-hover);
+        }
+        .customer-logo i {
+            color: var(--secondary);
+            font-size: 1.4rem;
+        }
+
+        /* ===== FAQ ===== */
+        .faq {
+            padding: 70px 0;
+            background: var(--white);
+        }
+        .faq-list {
+            max-width: 820px;
+            margin: 36px auto 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .faq-item {
+            border: 1px solid #e2e8f0;
+            border-radius: var(--radius);
+            overflow: hidden;
+            background: var(--white);
+            transition: var(--transition);
+        }
+        .faq-item:hover {
+            border-color: var(--secondary);
+        }
+        .faq-q {
+            padding: 16px 22px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--light);
+            transition: var(--transition);
+            gap: 14px;
+            color: var(--primary);
+        }
+        .faq-q:hover {
+            background: rgba(232, 168, 30, 0.05);
+        }
+        .faq-q i {
+            transition: var(--transition);
+            color: var(--secondary);
+            flex-shrink: 0;
+        }
+        .faq-item.open .faq-q i {
+            transform: rotate(180deg);
+        }
+        .faq-a {
+            padding: 0 22px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        .faq-item.open .faq-a {
+            padding: 0 22px 22px;
+            max-height: 300px;
+        }
+
+        /* ===== CONTACT ===== */
+        .contact {
+            padding: 70px 0;
+            background: var(--light);
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 44px;
+            margin-top: 36px;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .contact-info .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            padding: 14px 18px;
+            background: var(--white);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+        .contact-info .info-item i {
+            font-size: 1.3rem;
+            color: var(--secondary);
+            margin-top: 2px;
+            width: 26px;
+            text-align: center;
+        }
+        .contact-info .info-item h5 {
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--primary);
+        }
+        .contact-info .info-item p {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+        .contact-form {
+            background: var(--white);
+            padding: 32px 28px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow);
+        }
+        .contact-form h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 18px;
+        }
+        .contact-form .form-group {
+            margin-bottom: 14px;
+        }
+        .contact-form label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.8rem;
+            color: var(--text);
+            margin-bottom: 3px;
+        }
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid #d1d9e6;
+            border-radius: 8px;
+            font-family: var(--font);
+            font-size: 0.9rem;
+            background: var(--light);
+            transition: var(--transition);
+        }
+        .contact-form input:focus,
+        .contact-form textarea:focus,
+        .contact-form select:focus {
+            outline: none;
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 3px rgba(232, 168, 30, 0.12);
+            background: var(--white);
+        }
+        .contact-form textarea {
+            min-height: 90px;
+            resize: vertical;
+        }
+        .contact-form .btn {
+            width: 100%;
+            justify-content: center;
+            margin-top: 6px;
+            padding: 14px;
+        }
+        .contact-form .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--primary);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 44px 0 20px;
+        }
+        footer .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 36px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+        }
+        footer .brand h4 {
+            color: var(--white);
+            font-size: 1.2rem;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        footer .brand h4 i {
+            color: var(--secondary);
+        }
+        footer .brand p {
+            font-size: 0.85rem;
+            margin-top: 6px;
+            max-width: 300px;
+        }
+        footer h5 {
+            color: var(--white);
+            font-weight: 700;
+            margin-bottom: 14px;
+            font-size: 0.95rem;
+        }
+        footer ul li {
+            margin-bottom: 6px;
+        }
+        footer ul li a {
+            font-size: 0.85rem;
+            transition: var(--transition);
+        }
+        footer ul li a:hover {
+            color: var(--secondary);
+        }
+        footer .bottom {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 0.8rem;
+            opacity: 0.6;
+        }
+
+        /* ===== MOBILE BOTTOM BAR ===== */
+        .mobile-bottom-bar {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            background: var(--white);
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+            padding: 8px 14px;
+            justify-content: space-around;
+            align-items: center;
+            border-top: 1px solid #e2e8f0;
+        }
+        .mobile-bottom-bar .btn {
+            padding: 8px 14px;
+            font-size: 0.75rem;
+            flex: 1;
+            justify-content: center;
+            border-radius: 8px;
+        }
+        .mobile-bottom-bar .btn i {
+            font-size: 0.95rem;
+        }
+
+        /* ===== MODAL ===== */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.55);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            animation: fadeIn 0.3s ease;
+        }
+        .modal-overlay.active {
+            display: flex;
+        }
+        .modal {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            max-width: 720px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 36px 32px;
+            position: relative;
+            animation: slideUp 0.35s ease;
+        }
+        .modal-close {
+            position: absolute;
+            top: 14px;
+            right: 18px;
+            font-size: 1.5rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--text-light);
+            transition: var(--transition);
+        }
+        .modal-close:hover {
+            color: var(--primary);
+            transform: rotate(90deg);
+        }
+        .modal .img-box {
+            height: 180px;
+            background: var(--gray);
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.5rem;
+            color: var(--primary-light);
+            margin-bottom: 16px;
+            background: linear-gradient(145deg, #f0f4f9, #e2e8f0);
+            overflow: hidden;
+        }
+        .modal .img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .modal .img-box .fallback-icon {
+            font-size: 3.5rem;
+            color: var(--primary-light);
+            opacity: 0.4;
+        }
+        .modal h2 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+        .modal .cat-badge {
+            display: inline-block;
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--secondary);
+            background: rgba(232, 168, 30, 0.1);
+            padding: 2px 14px;
+            border-radius: 50px;
+            margin: 5px 0 10px;
+        }
+        .modal .specs-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px 18px;
+            margin: 14px 0;
+            padding: 14px 0;
+            border-top: 1px solid #e2e8f0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .modal .specs-list li {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .modal .specs-list li i {
+            color: var(--secondary);
+            font-size: 0.75rem;
+        }
+        .modal .actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .modal .actions .btn {
+            flex: 1;
+            min-width: 120px;
+            justify-content: center;
+        }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(0.97);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 36px;
+                text-align: center;
+            }
+            .hero-content p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .hero-buttons {
+                justify-content: center;
+            }
+            .hero-content h1 {
+                font-size: 2.6rem;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            footer .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 72px;
+                left: 0;
+                right: 0;
+                background: var(--white);
+                padding: 18px 22px;
+                box-shadow: var(--shadow);
+                border-radius: 0 0 var(--radius) var(--radius);
+                gap: 2px;
+                border-top: 1px solid #e2e8f0;
+            }
+            .nav-links.open {
+                display: flex;
+            }
+            .nav-links a {
+                padding: 10px 14px;
+                width: 100%;
+            }
+            .nav-cta {
+                display: none;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            .section-title {
+                font-size: 1.8rem;
+            }
+            .products-grid {
+                grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+            }
+            .categories-grid {
+                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            }
+            .modal {
+                padding: 24px 18px;
+            }
+            .modal .specs-list {
+                grid-template-columns: 1fr;
+            }
+            .contact-form .form-row {
+                grid-template-columns: 1fr;
+            }
+            .mobile-bottom-bar {
+                display: flex;
+            }
+            body {
+                padding-bottom: 72px;
+            }
+            footer .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            .brands-grid {
+                gap: 16px 28px;
+            }
+            .search-filter input,
+            .search-filter select {
+                min-width: 100px;
+                flex: 1 1 100%;
+            }
+            .products-header {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 14px;
+            }
+            .hero {
+                padding: 100px 0 40px;
+                min-height: auto;
+            }
+            .hero-content h1 {
+                font-size: 1.6rem;
+            }
+            .hero-content p {
+                font-size: 0.95rem;
+            }
+            .btn-lg {
+                padding: 12px 22px;
+                font-size: 0.9rem;
+            }
+            .products-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
+            }
+            .product-card .body {
+                padding: 12px 12px 16px;
+            }
+            .product-card .body h4 {
+                font-size: 0.85rem;
+            }
+            .product-card .body p {
+                font-size: 0.75rem;
+            }
+            .product-card .body .actions .btn {
+                font-size: 0.65rem;
+                padding: 6px 10px;
+            }
+            .product-card .img-box {
+                height: 140px;
+            }
+            .categories-grid {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+                gap: 10px;
+            }
+            .cat-card {
+                padding: 16px 10px;
+            }
+            .cat-card i {
+                font-size: 1.8rem;
+            }
+            .cat-card h4 {
+                font-size: 0.75rem;
+            }
+            .contact-form {
+                padding: 20px 16px;
+            }
+            .modal {
+                padding: 18px 14px;
+            }
+            .modal .img-box {
+                height: 120px;
+            }
+            .modal h2 {
+                font-size: 1.1rem;
+            }
+            .mobile-bottom-bar .btn {
+                font-size: 0.65rem;
+                padding: 6px 10px;
+            }
+            .mobile-bottom-bar .btn i {
+                font-size: 0.85rem;
+            }
+            .customers-grid {
+                gap: 12px 20px;
+            }
+            .customer-logo {
+                font-size: 0.8rem;
+                padding: 6px 16px;
+            }
+        }
+        @media (max-width: 380px) {
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 50px 20px;
+            color: var(--text-light);
+            grid-column: 1 / -1;
+        }
+        .no-results i {
+            font-size: 2.8rem;
+            color: var(--gray-dark);
+            margin-bottom: 14px;
+            display: block;
+        }
+
+        /* ===== SCROLLBAR ===== */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--light);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--secondary);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--secondary-dark);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header id="header">
+        <div class="container nav-wrap">
+            <a href="#" class="logo">
+                <div class="logo-icon"><i class="fas fa-bolt"></i> SLV</div>
+                <div class="logo-text">
+                    ENTERPRISES
+                    <span>Industrial • Electrical • Automation</span>
+                </div>
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#" class="active" data-section="home">Home</a>
+                <a href="#" data-section="about">About</a>
+                <a href="#" data-section="products">Products</a>
+                <a href="#" data-section="solutions">Solutions</a>
+                <a href="#" data-section="industries">Industries</a>
+                <a href="#" data-section="faq">FAQ</a>
+                <a href="#" data-section="contact">Contact</a>
+                <div class="nav-cta" style="display:flex;gap:6px;margin-top:6px;width:100%;">
+                    <a href="#" class="btn btn-primary btn-sm" data-section="contact">Get Quote</a>
+                    <a href="#" class="btn btn-whatsapp btn-sm" id="navWhatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </nav>
+            <div style="display:flex;align-items:center;gap:10px;">
+                <a href="#" class="btn btn-primary btn-sm" style="display:none;" id="desktopQuoteBtn" data-section="contact">Get Quote</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge"><i class="fas fa-check-circle"></i> Complete Industrial Supplier</div>
+                <h1>Complete Industrial Electrical, Automation &amp; <span>Engineering Components</span></h1>
+                <p>A professional B2B supplier providing electrical components, automation products, fasteners, tools, safety products and industrial accessories.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary btn-lg" data-section="products"><i class="fas fa-search"></i> Explore Products</a>
+                    <a href="#" class="btn btn-secondary btn-lg" data-section="contact"><i class="fas fa-file-invoice"></i> Request a Quote</a>
+                    <a href="#" class="btn btn-whatsapp btn-lg" id="heroWhatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=800&h=600&fit=crop&crop=center&auto=format" alt="Industrial products and components" loading="lazy" />
+                    <div class="overlay-icon"><i class="fas fa-industry"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CATEGORIES ===== -->
+    <section class="categories" id="categoriesSection">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag"><i class="fas fa-th-large"></i> Product Categories</span>
+                <h2 class="section-title">Explore Our <span>Industrial Range</span></h2>
+                <p class="section-sub mx-auto">From fasteners to automation – complete industrial solutions under one roof.</p>
+            </div>
+            <div class="categories-grid" id="categoriesGrid"></div>
+        </div>
+    </section>
+
+    <!-- ===== PRODUCTS ===== -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="products-header">
+                <div>
+                    <span class="section-tag"><i class="fas fa-boxes"></i> Our Catalogue</span>
+                    <h2 class="section-title">Industrial <span>Products</span></h2>
+                </div>
+                <div class="search-filter">
+                    <input type="text" id="searchInput" placeholder="Search products..." aria-label="Search products" />
+                    <select id="categoryFilter" aria-label="Filter by category"><option value="">All Categories</option></select>
+                    <button class="btn btn-outline btn-sm" id="clearFilters"><i class="fas fa-times"></i> Clear</button>
+                </div>
+            </div>
+            <div class="products-grid" id="productsGrid"></div>
+        </div>
+    </section>
+
+    <!-- ===== WHY US ===== -->
+    <section class="why-us" id="about">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag"><i class="fas fa-star"></i> Why SLV Enterprises</span>
+                <h2 class="section-title">Your Trusted <span>Industrial Partner</span></h2>
+                <p class="section-sub mx-auto">Wide product range, consistent quality, industry expertise and on-time delivery.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card"><i class="fas fa-cubes"></i><h4>Wide Product Range</h4><p>Fasteners, electrical, automation, tools, safety – all in one place.</p></div>
+                <div class="why-card"><i class="fas fa-check-double"></i><h4>Consistent Quality</h4><p>Products sourced to meet strict quality and durability standards.</p></div>
+                <div class="why-card"><i class="fas fa-user-cog"></i><h4>Industry Expertise</h4><p>Deep technical knowledge and hands-on experience.</p></div>
+                <div class="why-card"><i class="fas fa-clock"></i><h4>On-Time Delivery</h4><p>Efficient supply chain and inventory management.</p></div>
+                <div class="why-card"><i class="fas fa-handshake"></i><h4>B2B Sourcing</h4><p>Tailored solutions for manufacturers, OEMs and contractors.</p></div>
+                <div class="why-card"><i class="fas fa-search-plus"></i><h4>Requirement Sourcing</h4><p>We source based on your part number, drawing or sample.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SOLUTIONS ===== -->
+    <section class="solutions" id="solutions">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag"><i class="fas fa-lightbulb"></i> Solutions</span>
+                <h2 class="section-title">Industrial <span>Solutions</span></h2>
+                <p class="section-sub mx-auto">End-to-end supply solutions for diverse industrial applications.</p>
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-card"><i class="fas fa-robot"></i><h4>Industrial Automation</h4><p>PLC, HMI, VFD, sensors, relays, pneumatic and hydraulic components.</p></div>
+                <div class="solution-card"><i class="fas fa-motorcycle"></i><h4>Motor Control</h4><p>Contactors, overload relays, starters, protection devices and accessories.</p></div>
+                <div class="solution-card"><i class="fas fa-server"></i><h4>Control Panels</h4><p>Terminal blocks, power supplies, control components, cooling and panel hardware.</p></div>
+                <div class="solution-card"><i class="fas fa-shield-alt"></i><h4>Electrical Protection</h4><p>MCB, MCCB, RCCB, RCBO, fuses, surge protection and isolators.</p></div>
+                <div class="solution-card"><i class="fas fa-tools"></i><h4>Fasteners & Hardware</h4><p>Bolts, nuts, washers, screws, rivets, circlips, springs and hardware.</p></div>
+                <div class="solution-card"><i class="fas fa-plug"></i><h4>Power Transmission</h4><p>Belts, pulleys, couplings, bearings and transmission products.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== INDUSTRIES ===== -->
+    <section class="industries" id="industries">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag"><i class="fas fa-industry"></i> Industries We Serve</span>
+                <h2 class="section-title">Serving <span>Diverse Sectors</span></h2>
+                <p class="section-sub mx-auto">Our products are trusted across construction, automotive, infrastructure, machinery and heavy engineering.</p>
+            </div>
+            <div class="industries-grid" id="industriesGrid"></div>
+        </div>
+    </section>
+
+    <!-- ===== BRANDS ===== -->
+    <section class="brands" id="brands">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag"><i class="fas fa-trademark"></i> Brands &amp; Partners</span>
+                <h2 class="section-title">We Work With <span>Reliable Manufacturers</span></h2>
+                <p class="section-sub mx-auto" style="font-size:0.85rem;opacity:0.8;">We are associated with reputed brands to bring the best quality products to our customers.</p>
+            </div>
+            <div class="brands-grid" id="brandsGrid"></div>
+        </div>
+    </section>
+
+    <!-- ===== CUSTOMERS ===== -->
+    <section class="customers" id="customers">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag"><i class="fas fa-users"></i> Our Customers</span>
+                <h2 class="section-title">Trusted by <span>Industry Leaders</span></h2>
+                <p class="section-sub mx-auto">We are proud to serve some of the biggest names in the industry.</p>
+            </div>
+            <div class="customers-grid" id="customersGrid"></div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag"><i class="fas fa-question-circle"></i> FAQ</span>
+                <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+                <p class="section-sub mx-auto">Quick answers to common queries about our products and services.</p>
+            </div>
+            <div class="faq-list" id="faqList"></div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag"><i class="fas fa-envelope"></i> Contact</span>
+                <h2 class="section-title">Let's Discuss Your <span>Requirement</span></h2>
+                <p class="section-sub mx-auto">Whether you need a single component or a bulk supply, reach out to our team.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-item"><i class="fas fa-phone-alt"></i><div><h5>Phone</h5><p>+91 7829772767</p><p style="font-size:0.8rem;color:var(--gray-dark);">+91 9844169916</p></div></div>
+                    <div class="info-item"><i class="fab fa-whatsapp"></i><div><h5>WhatsApp</h5><p>+91 7829772767</p></div></div>
+                    <div class="info-item"><i class="fas fa-envelope"></i><div><h5>Email</h5><p>info@slventerprises.com</p></div></div>
+                    <div class="info-item"><i class="fas fa-map-marker-alt"></i><div><h5>Address</h5><p>No. 18/1, Huskur Main Road, Adigudi, Bengaluru - 560030, Karnataka, India</p></div></div>
+                    <div class="info-item"><i class="fas fa-clock"></i><div><h5>Business Hours</h5><p>Mon–Sat, 9:00 AM – 6:00 PM</p></div></div>
+                </div>
+                <div class="contact-form">
+                    <h3><i class="fas fa-paper-plane" style="color:var(--secondary);margin-right:8px;"></i> Send Enquiry</h3>
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group"><label for="cfName">Name *</label><input type="text" id="cfName" required placeholder="Your name" /></div>
+                            <div class="form-group"><label for="cfCompany">Company</label><input type="text" id="cfCompany" placeholder="Company name" /></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group"><label for="cfPhone">Phone *</label><input type="tel" id="cfPhone" required placeholder="Mobile number" /></div>
+                            <div class="form-group"><label for="cfEmail">Email</label><input type="email" id="cfEmail" placeholder="Email address" /></div>
+                        </div>
+                        <div class="form-group"><label for="cfProduct">Product / Part Number</label><input type="text" id="cfProduct" placeholder="Product name or part number" /></div>
+                        <div class="form-row">
+                            <div class="form-group"><label for="cfQty">Quantity</label><input type="text" id="cfQty" placeholder="e.g. 100 Nos" /></div>
+                            <div class="form-group"><label for="cfRequirement">Requirement Type</label><select id="cfRequirement"><option value="">Select</option><option>Bulk Order</option><option>Sample</option><option>Replacement</option><option>New Project</option><option>Other</option></select></div>
+                        </div>
+                        <div class="form-group"><label for="cfMessage">Message</label><textarea id="cfMessage" placeholder="Describe your requirement in detail..."></textarea></div>
+                        <button type="submit" class="btn btn-primary btn-lg"><i class="fas fa-paper-plane"></i> Submit Enquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="brand">
+                    <h4><i class="fas fa-bolt"></i> SLV <span style="color:var(--secondary);">Enterprises</span></h4>
+                    <p>Industrial Electrical, Automation &amp; Engineering Components Supplier. Powering Progress. Building Solutions.</p>
+                    <p style="font-size:0.8rem;margin-top:4px;">Fasteners • Electrical • Automation • Tools • Safety • Bearings</p>
+                </div>
+                <div><h5>Quick Links</h5><ul><li><a href="#" data-section="home">Home</a></li><li><a href="#" data-section="about">About</a></li><li><a href="#" data-section="products">Products</a></li><li><a href="#" data-section="solutions">Solutions</a></li><li><a href="#" data-section="industries">Industries</a></li><li><a href="#" data-section="faq">FAQ</a></li><li><a href="#" data-section="contact">Contact</a></li></ul></div>
+                <div><h5>Products</h5><ul><li><a href="#" data-section="products">Fasteners</a></li><li><a href="#" data-section="products">Electrical</a></li><li><a href="#" data-section="products">Automation</a></li><li><a href="#" data-section="products">Tools</a></li><li><a href="#" data-section="products">Safety Items</a></li><li><a href="#" data-section="products">Bearings</a></li><li><a href="#" data-section="products">Cutting Tools</a></li></ul></div>
+                <div><h5>Contact</h5><ul><li><i class="fas fa-phone" style="color:var(--secondary);width:18px;"></i> +91 7829772767</li><li><i class="fab fa-whatsapp" style="color:var(--secondary);width:18px;"></i> +91 7829772767</li><li><i class="fas fa-envelope" style="color:var(--secondary);width:18px;"></i> info@slventerprises.com</li><li><i class="fas fa-map-marker-alt" style="color:var(--secondary);width:18px;"></i> Bengaluru, India</li></ul></div>
+            </div>
+            <div class="bottom">&copy; 2026 SLV Enterprises. All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <!-- ===== MOBILE BOTTOM BAR ===== -->
+    <div class="mobile-bottom-bar">
+        <a href="tel:+917829772767" class="btn btn-secondary btn-sm"><i class="fas fa-phone"></i> Call</a>
+        <a href="https://wa.me/917829772767" target="_blank" class="btn btn-whatsapp btn-sm"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="#" class="btn btn-primary btn-sm" data-section="contact"><i class="fas fa-file-invoice"></i> Quote</a>
+    </div>
+
+    <!-- ===== MODAL ===== -->
+    <div class="modal-overlay" id="productModal">
+        <div class="modal">
+            <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+            <div class="img-box" id="modalImage"><i class="fas fa-microchip fallback-icon"></i></div>
+            <span class="cat-badge" id="modalCategory">Category</span>
+            <h2 id="modalName">Product Name</h2>
+            <p style="color:var(--text-light);margin:5px 0 0;" id="modalDesc">Description</p>
+            <ul class="specs-list" id="modalSpecs"></ul>
+            <p style="font-weight:600;color:var(--primary);margin-top:6px;"><i class="fas fa-check-circle" style="color:var(--secondary);"></i> Applications:</p>
+            <ul style="display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 16px;" id="modalApps"></ul>
+            <div class="actions">
+                <a href="#" class="btn btn-primary" id="modalQuoteBtn"><i class="fas fa-file-invoice"></i> Request Quote</a>
+                <a href="#" class="btn btn-whatsapp" id="modalWhatsappBtn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ============================================================
+        //  CONFIGURATION
+        // ============================================================
+        const CONFIG = {
+            phone: '+91 7829772767',
+            phone2: '+91 9844169916',
+            whatsapp: '+91 7829772767',
+            whatsapp2: '+91 9844169916',
+            email: 'info@slventerprises.com',
+            address: 'No. 18/1, Huskur Main Road, Adigudi, Bengaluru - 560030, Karnataka, India',
+            hours: 'Mon–Sat, 9:00 AM – 6:00 PM',
+            company: 'SLV Enterprises'
+        };
+
+        // ============================================================
+        //  PRODUCT DATABASE — ALL PRODUCTS FROM BROCHURE + ELECTRICAL
+        // ============================================================
+        const products = [
+            // ---- BOLTS & SCREWS (from brochure) ----
+            { id: 1, name: '8.8 Grade Hex Head Bolt', category: 'Fasteners', subcategory: 'Bolts & Screws',
+                description: 'High strength hex head bolt for structural and industrial applications. Grade 8.8.',
+                specs: ['Grade 8.8', 'Metric', 'Zinc Plated'], applications: ['Construction', 'Machinery', 'Automotive'],
+                icon: 'fa-bolt' },
+            { id: 2, name: '10.9 Grade Hex Head Bolt', category: 'Fasteners', subcategory: 'Bolts & Screws',
+                description: 'High tensile hex bolt for heavy-duty applications. Grade 10.9.',
+                specs: ['Grade 10.9', 'Metric', 'Black Oxide'], applications: ['Heavy Machinery', 'Structural',
+                    'Earthmoving'
+                ], icon: 'fa-bolt' },
+            { id: 3, name: '8.8 Grade Hex Head Screw', category: 'Fasteners', subcategory: 'Bolts & Screws',
+                description: 'Hex head screw for general industrial fastening. Grade 8.8.',
+                specs: ['Grade 8.8', 'Metric', 'Zinc Plated'], applications: ['Assembly', 'Machinery', 'Maintenance'],
+                icon: 'fa-screwdriver' },
+            { id: 4, name: '10.9 Grade Hex Head Screw', category: 'Fasteners', subcategory: 'Bolts & Screws',
+                description: 'High strength hex head screw for demanding applications. Grade 10.9.',
+                specs: ['Grade 10.9', 'Metric', 'Black Oxide'], applications: ['Heavy Machinery', 'Automotive',
+                    'Engineering'
+                ], icon: 'fa-screwdriver' },
+            { id: 5, name: 'Flange Bolt', category: 'Fasteners', subcategory: 'Bolts & Screws',
+                description: 'Bolt with integral flange for better load distribution.',
+                specs: ['Metric', 'Zinc Plated', 'Flange Head'], applications: ['Automotive', 'Machinery', 'Assembly'],
+                icon: 'fa-bolt' },
+            { id: 6, name: 'Carriage Bolt', category: 'Fasteners', subcategory: 'Bolts & Screws',
+                description: 'Bolt with domed head and square neck for wood and metal applications.',
+                specs: ['Metric', 'Zinc Plated', 'Square Neck'], applications: ['Woodworking', 'Construction', 'Furniture'],
+                icon: 'fa-bolt' },
+            { id: 7, name: 'Socket Head Cap Screw', category: 'Fasteners', subcategory: 'Bolts & Screws',
+                description: 'High-strength socket head cap screw for precision applications.',
+                specs: ['Grade 12.9', 'Metric', 'Black Oxide'], applications: ['Machine assembly', 'Moulds', 'Dies'],
+                icon: 'fa-cogs' },
+            { id: 8, name: '8.8 Grade Socket Head Cap Screw', category: 'Fasteners', subcategory: 'Bolts & Screws',
+                description: 'Socket head cap screw for precision fastening. Grade 8.8.',
+                specs: ['Grade 8.8', 'Metric', 'Black Oxide'], applications: ['Precision Assembly', 'Machinery',
+                    'Instrumentation'
+                ], icon: 'fa-cogs' },
+            { id: 9, name: '12.9 Grade Socket Head Cap Screw', category: 'Fasteners', subcategory: 'Bolts & Screws',
+                description: 'Ultra-high strength socket head cap screw. Grade 12.9.',
+                specs: ['Grade 12.9', 'Metric', 'Black Oxide'], applications: ['High Stress Applications', 'Aerospace',
+                    'Heavy Machinery'
+                ], icon: 'fa-cogs' },
+            { id: 10, name: 'Button Head Socket Screw', category: 'Fasteners', subcategory: 'Bolts & Screws',
+                description: 'Socket screw with low-profile button head.',
+                specs: ['Metric', 'Black Oxide', 'Low Profile'], applications: ['Aesthetics', 'Low Clearance',
+                    'Sheet Metal'
+                ], icon: 'fa-cogs' },
+            { id: 11, name: 'Countersunk Socket Head Screw', category: 'Fasteners', subcategory: 'Bolts & Screws',
+                description: 'Socket screw with countersunk head for flush mounting.',
+                specs: ['Metric', 'Black Oxide', 'Countersunk'], applications: ['Furniture', 'Electronics',
+                    'Aesthetic Applications'
+                ], icon: 'fa-cogs' },
+            { id: 12, name: 'Socket Set Screw', category: 'Fasteners', subcategory: 'Bolts & Screws',
+                description: 'Set screw for securing components on shafts.',
+                specs: ['Metric', 'Black Oxide', 'Cup Point'], applications: ['Shafts', 'Gears', 'Pulleys'],
+                icon: 'fa-cogs' },
+            { id: 13, name: 'Hexagon Wrenches', category: 'Tools', subcategory: 'Hand Tools',
+                description: 'Set of hexagon wrenches (Allen keys) for socket screws.',
+                specs: ['Metric', 'Steel', 'Set of 9'], applications: ['Assembly', 'Maintenance', 'Workshop'],
+                icon: 'fa-tools' },
+            { id: 14, name: 'Full Thread Stud', category: 'Fasteners', subcategory: 'Bolts & Screws',
+                description: 'Threaded rod with full thread length for custom applications.',
+                specs: ['Metric', 'Zinc Plated', 'Full Thread'], applications: ['Construction', 'Hanging Systems',
+                    'Custom Assemblies'
+                ], icon: 'fa-ruler-vertical' },
+
+            // ---- NUTS ----
+            { id: 15, name: '8 Grade Hex Nut', category: 'Fasteners', subcategory: 'Nuts',
+                description: 'Standard hex nut for bolting applications. Grade 8.',
+                specs: ['Grade 8', 'Metric', 'Zinc Plated'], applications: ['General Assembly', 'Machinery',
+                    'Construction'
+                ], icon: 'fa-cog' },
+            { id: 16, name: '10 Grade Hex Nut', category: 'Fasteners', subcategory: 'Nuts',
+                description: 'High strength hex nut for demanding applications. Grade 10.',
+                specs: ['Grade 10', 'Metric', 'Zinc Plated'], applications: ['Heavy Machinery', 'Structural',
+                    'Automotive'
+                ], icon: 'fa-cog' },
+            { id: 17, name: 'Nylock Nut', category: 'Fasteners', subcategory: 'Nuts',
+                description: 'Self-locking nut with nylon insert for vibration resistance.',
+                specs: ['Grade 8', 'Nylon Insert', 'Metric'], applications: ['Automotive', 'Vibration-Prone Areas',
+                    'Machinery'
+                ], icon: 'fa-lock' },
+            { id: 18, name: 'Hex Weld Nut', category: 'Fasteners', subcategory: 'Nuts',
+                description: 'Hex nut designed for welding to a surface.',
+                specs: ['Metric', 'Steel', 'Weldable'], applications: ['Welding', 'Fabrication', 'Automotive'],
+                icon: 'fa-cog' },
+            { id: 19, name: 'Square Weld Nut', category: 'Fasteners', subcategory: 'Nuts',
+                description: 'Square nut for welding to a surface.',
+                specs: ['Metric', 'Steel', 'Weldable'], applications: ['Welding', 'Fabrication', 'Heavy Equipment'],
+                icon: 'fa-cog' },
+            { id: 20, name: 'Flange Nut', category: 'Fasteners', subcategory: 'Nuts',
+                description: 'Nut with integral flange for better load distribution.',
+                specs: ['Metric', 'Zinc Plated', 'Flange'], applications: ['Automotive', 'Machinery', 'Assembly'],
+                icon: 'fa-cog' },
+            { id: 21, name: 'Dom Nut', category: 'Fasteners', subcategory: 'Nuts',
+                description: 'Domed cap nut for aesthetic finishing.',
+                specs: ['Metric', 'Zinc Plated', 'Domed'], applications: ['Furniture', 'Aesthetic Applications',
+                    'Finishing'
+                ], icon: 'fa-cog' },
+            { id: 22, name: 'Tee Nut', category: 'Fasteners', subcategory: 'Nuts',
+                description: 'T-shaped nut for slot and channel applications.',
+                specs: ['Metric', 'Zinc Plated', 'T-Shape'], applications: ['Furniture', 'Assembly', 'Aluminium Extrusion'],
+                icon: 'fa-cog' },
+            { id: 23, name: 'Internal Threaded Dowels', category: 'Fasteners', subcategory: 'Nuts',
+                description: 'Dowels with internal threads for alignment and fastening.',
+                specs: ['Metric', 'Steel', 'Threaded'], applications: ['Alignment', 'Jigs', 'Fixtures'], icon: 'fa-cog' },
+            { id: 24, name: 'RIVT Nut / Insert Nut', category: 'Fasteners', subcategory: 'Nuts',
+                description: 'Blind rivet nut for thin wall applications.',
+                specs: ['Metric', 'Steel', 'Blind Installation'], applications: ['Sheet Metal', 'Automotive',
+                    'Electronics'
+                ], icon: 'fa-cog' },
+            { id: 25, name: 'Wing Nuts', category: 'Fasteners', subcategory: 'Nuts',
+                description: 'Nut with wings for hand tightening without tools.',
+                specs: ['Metric', 'Zinc Plated', 'Winged'], applications: ['Furniture', 'Quick Assembly', 'Maintenance'],
+                icon: 'fa-cog' },
+            { id: 26, name: 'Cage Nuts', category: 'Fasteners', subcategory: 'Nuts',
+                description: 'Square nut in a cage for rack and panel mounting.',
+                specs: ['Metric', 'Steel', 'Caged'], applications: ['Racks', 'Panels', 'Cabinets'], icon: 'fa-cog' },
+            { id: 27, name: 'Spring Nut', category: 'Fasteners', subcategory: 'Nuts',
+                description: 'Spring-loaded nut for channel mounting.',
+                specs: ['Metric', 'Spring Steel', 'Channel Mount'], applications: ['Unistrut', 'Channel Systems',
+                    'Mounting'
+                ], icon: 'fa-cog' },
+
+            // ---- WASHERS ----
+            { id: 28, name: 'Flat Punched Washer', category: 'Fasteners', subcategory: 'Washers',
+                description: 'Standard flat washer for load distribution.',
+                specs: ['Metric', 'Zinc Plated', 'Flat'], applications: ['General Assembly', 'Bolted Joints'],
+                icon: 'fa-circle' },
+            { id: 29, name: 'Machined Washer', category: 'Fasteners', subcategory: 'Washers',
+                description: 'Precision machined washer for accurate spacing.',
+                specs: ['Metric', 'Steel', 'Precision'], applications: ['Precision Assembly', 'Instrumentation',
+                    'Aerospace'
+                ], icon: 'fa-circle' },
+            { id: 30, name: 'Spring Washer — Flat Section', category: 'Fasteners', subcategory: 'Washers',
+                description: 'Helical spring washer to prevent loosening.',
+                specs: ['Metric', 'Spring Steel', 'Zinc Plated'], applications: ['Vibration-Prone Joints', 'Machinery'],
+                icon: 'fa-spring' },
+            { id: 31, name: 'Spring Washer — Square Section', category: 'Fasteners', subcategory: 'Washers',
+                description: 'Square section spring washer for heavy-duty applications.',
+                specs: ['Metric', 'Spring Steel', 'Square Section'], applications: ['Heavy Machinery', 'Construction',
+                    'Industrial'
+                ], icon: 'fa-spring' },
+            { id: 32, name: 'Star Washer', category: 'Fasteners', subcategory: 'Washers',
+                description: 'Internal or external tooth lock washer.',
+                specs: ['Metric', 'Steel', 'Zinc Plated'], applications: ['Electrical Connections', 'Vibration',
+                    'Grounding'
+                ], icon: 'fa-star' },
+            { id: 33, name: 'Disc Washer', category: 'Fasteners', subcategory: 'Washers',
+                description: 'Belleville disc washer for high load applications.',
+                specs: ['Metric', 'Spring Steel', 'Disc'], applications: ['High Load', 'Thermal Expansion', 'Bolting'],
+                icon: 'fa-circle' },
+            { id: 34, name: 'Structural Washer', category: 'Fasteners', subcategory: 'Washers',
+                description: 'Heavy-duty washer for structural bolting.',
+                specs: ['Metric', 'Steel', 'Heavy Duty'], applications: ['Structural Steel', 'Construction', 'Bridges'],
+                icon: 'fa-circle' },
+            { id: 35, name: 'Direct Tension Indicator', category: 'Fasteners', subcategory: 'Washers',
+                description: 'Washer indicating tension in bolted joints.',
+                specs: ['Metric', 'Steel', 'Tension Indicating'], applications: ['Critical Bolting', 'Structural',
+                    'Safety'
+                ], icon: 'fa-circle' },
+
+            // ---- PINS & RETAINING ----
+            { id: 36, name: 'Split Pin', category: 'Fasteners', subcategory: 'Pins & Retaining',
+                description: 'Cotter pin for securing shafts and bolts.',
+                specs: ['Metric', 'Steel', 'Zinc Plated'], applications: ['Shafts', 'Bolts', 'Safety'],
+                icon: 'fa-arrow-right' },
+            { id: 37, name: 'Spring Dowel Pins', category: 'Fasteners', subcategory: 'Pins & Retaining',
+                description: 'Spring dowel pin for alignment and fastening.',
+                specs: ['Metric', 'Spring Steel', 'Slotted'], applications: ['Alignment', 'Jigs', 'Fixtures'],
+                icon: 'fa-arrow-right' },
+            { id: 38, name: 'E-Type Circlip', category: 'Fasteners', subcategory: 'Pins & Retaining',
+                description: 'External retaining ring with E-shape for shaft retention.',
+                specs: ['Metric', 'Spring Steel', 'E-Type'], applications: ['Shafts', 'Bearings', 'Gearboxes'],
+                icon: 'fa-arrows-h' },
+            { id: 39, name: 'External Circlip', category: 'Fasteners', subcategory: 'Pins & Retaining',
+                description: 'External retaining ring for shaft retention.',
+                specs: ['Metric', 'Spring Steel', 'External'], applications: ['Shafts', 'Bearings', 'Industrial'],
+                icon: 'fa-arrows-h' },
+            { id: 40, name: 'Internal Circlip', category: 'Fasteners', subcategory: 'Pins & Retaining',
+                description: 'Internal retaining ring for bore retention.',
+                specs: ['Metric', 'Spring Steel', 'Internal'], applications: ['Housings', 'Bearings', 'Industrial'],
+                icon: 'fa-arrows-h' },
+            { id: 41, name: 'Dowel Pins', category: 'Fasteners', subcategory: 'Pins & Retaining',
+                description: 'Solid dowel pin for alignment and fastening.',
+                specs: ['Metric', 'Steel', 'Precision Ground'], applications: ['Alignment', 'Jigs', 'Moulds'],
+                icon: 'fa-arrow-right' },
+
+            // ---- WELDING ----
+            { id: 42, name: 'Weld Fasteners', category: 'Fasteners', subcategory: 'Welding',
+                description: 'Various fasteners designed for welding applications.',
+                specs: ['Metric', 'Steel', 'Weldable'], applications: ['Fabrication', 'Welding', 'Heavy Equipment'],
+                icon: 'fa-fire' },
+            { id: 43, name: 'Weld Nuts', category: 'Fasteners', subcategory: 'Welding',
+                description: 'Nuts designed for welding to a surface.',
+                specs: ['Metric', 'Steel', 'Weldable'], applications: ['Fabrication', 'Welding', 'Automotive'],
+                icon: 'fa-fire' },
+            { id: 44, name: 'Square Weld Nuts', category: 'Fasteners', subcategory: 'Welding',
+                description: 'Square nuts designed for welding to a surface.',
+                specs: ['Metric', 'Steel', 'Weldable'], applications: ['Fabrication', 'Welding', 'Heavy Equipment'],
+                icon: 'fa-fire' },
+            { id: 45, name: 'Panel Fasteners', category: 'Fasteners', subcategory: 'Welding',
+                description: 'Fasteners for panel and sheet metal applications.',
+                specs: ['Metric', 'Steel', 'Various Types'], applications: ['Panels', 'Sheet Metal', 'Cabinets'],
+                icon: 'fa-fire' },
+
+            // ---- RIVETS ----
+            { id: 46, name: 'Pop Rivet', category: 'Fasteners', subcategory: 'Rivets',
+                description: 'Blind rivet for permanent fastening.',
+                specs: ['Aluminium', 'Steel Mandrel', 'Various Sizes'], applications: ['Sheet Metal', 'Automotive',
+                    'Construction'
+                ], icon: 'fa-crosshairs' },
+            { id: 47, name: 'Blind Rivets', category: 'Fasteners', subcategory: 'Rivets',
+                description: 'Blind rivets for applications where only one side is accessible.',
+                specs: ['Aluminium', 'Steel', 'Various Sizes'], applications: ['Automotive', 'Construction', 'Assembly'],
+                icon: 'fa-crosshairs' },
+            { id: 48, name: 'Blind Rivet Nuts', category: 'Fasteners', subcategory: 'Rivets',
+                description: 'Blind rivet nut for creating threads in thin materials.',
+                specs: ['Steel', 'Metric', 'Blind Installation'], applications: ['Sheet Metal', 'Automotive',
+                    'Electronics'
+                ], icon: 'fa-crosshairs' },
+
+            // ---- ANCHORS & FIXINGS ----
+            { id: 49, name: 'Wedge Anchor', category: 'Fasteners', subcategory: 'Anchors & Fixings',
+                description: 'Wedge anchor for heavy-duty concrete fastening.',
+                specs: ['Metric', 'Steel', 'Zinc Plated'], applications: ['Concrete', 'Construction', 'Heavy Equipment'],
+                icon: 'fa-anchor' },
+            { id: 50, name: 'Drop-In Anchor', category: 'Fasteners', subcategory: 'Anchors & Fixings',
+                description: 'Drop-in anchor for concrete applications.',
+                specs: ['Metric', 'Steel', 'Zinc Plated'], applications: ['Concrete', 'Construction', 'Mounting'],
+                icon: 'fa-anchor' },
+            { id: 51, name: 'Pin Type Anchor', category: 'Fasteners', subcategory: 'Anchors & Fixings',
+                description: 'Pin type anchor for medium-duty concrete fastening.',
+                specs: ['Metric', 'Steel', 'Zinc Plated'], applications: ['Concrete', 'Construction', 'Light Mounting'],
+                icon: 'fa-anchor' },
+            { id: 52, name: 'Rawal Bolt', category: 'Fasteners', subcategory: 'Anchors & Fixings',
+                description: 'Rawal bolt for fastening to masonry and concrete.',
+                specs: ['Metric', 'Steel', 'Zinc Plated'], applications: ['Masonry', 'Concrete', 'Construction'],
+                icon: 'fa-anchor' },
+            { id: 53, name: 'Rawal Hook', category: 'Fasteners', subcategory: 'Anchors & Fixings',
+                description: 'Rawal hook for hanging applications.',
+                specs: ['Metric', 'Steel', 'Zinc Plated'], applications: ['Hanging', 'Masonry', 'Construction'],
+                icon: 'fa-anchor' },
+            { id: 54, name: 'Nylon Frame Fixing Anchors', category: 'Fasteners', subcategory: 'Anchors & Fixings',
+                description: 'Nylon frame anchor for window and door frames.',
+                specs: ['Metric', 'Nylon', 'Various Sizes'], applications: ['Windows', 'Doors', 'Framing'],
+                icon: 'fa-anchor' },
+
+            // ---- SELF-DRILLING SCREWS ----
+            { id: 55, name: 'Hex Head Self Drilling Screw', category: 'Fasteners', subcategory: 'Self-Drilling Screws',
+                description: 'Self-drilling screw with hex head for metal fastening.',
+                specs: ['Metric', 'Steel', 'Zinc Plated'], applications: ['Sheet Metal', 'Steel Framing', 'Construction'],
+                icon: 'fa-screwdriver' },
+            { id: 56, name: 'Truss Head Self Drilling Screw', category: 'Fasteners', subcategory: 'Self-Drilling Screws',
+                description: 'Self-drilling screw with truss head for metal fastening.',
+                specs: ['Metric', 'Steel', 'Zinc Plated'], applications: ['Sheet Metal', 'Steel Framing', 'Construction'],
+                icon: 'fa-screwdriver' },
+            { id: 57, name: 'CSK / Flat Head Self Drilling Screw', category: 'Fasteners',
+                subcategory: 'Self-Drilling Screws',
+                description: 'Countersunk self-drilling screw for flush finishing.',
+                specs: ['Metric', 'Steel', 'Zinc Plated'], applications: ['Sheet Metal', 'Aesthetic Applications',
+                    'Finishing'
+                ], icon: 'fa-screwdriver' },
+            { id: 58, name: 'Flange Head Self Drilling Screw', category: 'Fasteners',
+                subcategory: 'Self-Drilling Screws',
+                description: 'Self-drilling screw with flange head for better load distribution.',
+                specs: ['Metric', 'Steel', 'Zinc Plated'], applications: ['Sheet Metal', 'Steel Framing', 'Construction'],
+                icon: 'fa-screwdriver' },
+
+            // ---- OTHER SCREWS ----
+            { id: 59, name: 'Drywall Screw', category: 'Fasteners', subcategory: 'Other Screws',
+                description: 'Self-tapping screw for drywall to wood or metal studs.',
+                specs: ['Metric', 'Steel', 'Zinc Plated'], applications: ['Drywall', 'Construction', 'Interior'],
+                icon: 'fa-screwdriver' },
+            { id: 60, name: 'Self Tapping Screw', category: 'Fasteners', subcategory: 'Other Screws',
+                description: 'Self-tapping screw for fastening into metal or plastic.',
+                specs: ['Metric', 'Steel', 'Zinc Plated'], applications: ['Sheet Metal', 'Plastics', 'Automotive'],
+                icon: 'fa-screwdriver' },
+            { id: 61, name: 'Thread Repair Inserts', category: 'Fasteners', subcategory: 'Other Screws',
+                description: 'Inserts for repairing damaged threads.',
+                specs: ['Metric', 'Steel', 'Helical Coil'], applications: ['Maintenance', 'Repair', 'Automotive'],
+                icon: 'fa-screwdriver' },
+            { id: 62, name: 'Self Clinching Fasteners', category: 'Fasteners', subcategory: 'Other Screws',
+                description: 'Self-clinching fasteners for sheet metal applications.',
+                specs: ['Metric', 'Steel', 'Clinch Type'], applications: ['Sheet Metal', 'Electronics', 'Cabinets'],
+                icon: 'fa-screwdriver' },
+
+            // ---- CLAMPS & ACCESSORIES ----
+            { id: 63, name: 'Toggle Clamp', category: 'Fasteners', subcategory: 'Clamps & Accessories',
+                description: 'Toggle clamp for quick workholding.',
+                specs: ['Steel', 'Zinc Plated', 'Various Sizes'], applications: ['Workholding', 'Fixtures', 'Jigs'],
+                icon: 'fa-hand-paper' },
+            { id: 64, name: 'Furniture Fixing Accessories', category: 'Fasteners', subcategory: 'Clamps & Accessories',
+                description: 'Various accessories for furniture assembly and fixing.',
+                specs: ['Various', 'Steel/Plastic', 'Various Types'], applications: ['Furniture', 'Assembly',
+                    'Woodworking'
+                ], icon: 'fa-chair' },
+            { id: 65, name: 'Panel Board Accessories', category: 'Fasteners', subcategory: 'Clamps & Accessories',
+                description: 'Accessories for panel board mounting and assembly.',
+                specs: ['Various', 'Steel', 'Various Types'], applications: ['Panels', 'Boards', 'Mounting'],
+                icon: 'fa-th-large' },
+            { id: 66, name: 'Aluminium Extrusion & Accessories', category: 'Fasteners',
+                subcategory: 'Clamps & Accessories',
+                description: 'Aluminium extrusion profiles and accessories for framing.',
+                specs: ['Aluminium', 'Various Sizes', 'Various Types'], applications: ['Framing', 'Structures',
+                    'Machine Guards'
+                ], icon: 'fa-building' },
+            { id: 67, name: 'Spring Plungers', category: 'Fasteners', subcategory: 'Clamps & Accessories',
+                description: 'Spring-loaded plungers for positioning and indexing.',
+                specs: ['Metric', 'Steel', 'Spring Loaded'], applications: ['Positioning', 'Indexing', 'Jigs'],
+                icon: 'fa-spring' },
+            { id: 68, name: 'Indexing Elements', category: 'Fasteners', subcategory: 'Clamps & Accessories',
+                description: 'Indexing elements for precise positioning and alignment.',
+                specs: ['Metric', 'Steel', 'Various Types'], applications: ['Positioning', 'Indexing', 'Fixtures'],
+                icon: 'fa-bullseye' },
+
+            // ---- STAINLESS STEEL FASTENERS ----
+            { id: 69, name: 'Stainless Steel Bolts', category: 'Stainless Steel Fasteners', subcategory: 'Bolts',
+                description: 'High-quality stainless steel bolts for corrosion-resistant applications.',
+                specs: ['Stainless Steel', 'Metric', 'Corrosion Resistant'], applications: ['Marine', 'Chemical',
+                    'Food Processing'
+                ], icon: 'fa-bolt' },
+            { id: 70, name: 'Stainless Steel Nuts', category: 'Stainless Steel Fasteners', subcategory: 'Nuts',
+                description: 'Stainless steel nuts for corrosion-resistant applications.',
+                specs: ['Stainless Steel', 'Metric', 'Corrosion Resistant'], applications: ['Marine', 'Chemical',
+                    'Food Processing'
+                ], icon: 'fa-cog' },
+            { id: 71, name: 'Stainless Steel Screws', category: 'Stainless Steel Fasteners', subcategory: 'Screws',
+                description: 'Stainless steel screws for corrosion-resistant applications.',
+                specs: ['Stainless Steel', 'Metric', 'Corrosion Resistant'], applications: ['Marine', 'Chemical',
+                    'Food Processing'
+                ], icon: 'fa-screwdriver' },
+            { id: 72, name: 'Stainless Steel Washers', category: 'Stainless Steel Fasteners', subcategory: 'Washers',
+                description: 'Stainless steel washers for corrosion-resistant applications.',
+                specs: ['Stainless Steel', 'Metric', 'Corrosion Resistant'], applications: ['Marine', 'Chemical',
+                    'Food Processing'
+                ], icon: 'fa-circle' },
+            { id: 73, name: 'Stainless Steel Rivets', category: 'Stainless Steel Fasteners', subcategory: 'Rivets',
+                description: 'Stainless steel rivets for corrosion-resistant applications.',
+                specs: ['Stainless Steel', 'Metric', 'Corrosion Resistant'], applications: ['Marine', 'Chemical',
+                    'Food Processing'
+                ], icon: 'fa-crosshairs' },
+
+            // ---- ELECTRICAL & AUTOMATION (selected) ----
+            { id: 100, name: 'MCB 10A SP', category: 'Electrical', subcategory: 'Circuit Protection',
+                description: 'Miniature circuit breaker for overload and short-circuit protection.',
+                specs: ['10A', 'SP', 'B Curve'], applications: ['Distribution Boards', 'Residential', 'Commercial'],
+                icon: 'fa-shield-alt' },
+            { id: 101, name: 'MCCB 160A', category: 'Electrical', subcategory: 'Circuit Protection',
+                description: 'Moulded case circuit breaker for heavy-duty protection.',
+                specs: ['160A', '3 Pole', 'Adjustable Trip'], applications: ['Main Distribution', 'Industrial',
+                    'Switchgear'
+                ], icon: 'fa-shield-virus' },
+            { id: 102, name: 'AC Contactor 9A', category: 'Electrical', subcategory: 'Contactors',
+                description: 'Industrial contactor for AC motor and power switching.',
+                specs: ['9A', 'AC-3', '3 Pole'], applications: ['Motor Control', 'Panels', 'HVAC'], icon: 'fa-toggle-on' },
+            { id: 103, name: 'PLC Controller', category: 'Electrical', subcategory: 'Automation',
+                description: 'Programmable logic controller for automation systems.',
+                specs: ['24 I/O', 'Ethernet', 'Modular'], applications: ['Factory Automation', 'Process Control',
+                    'Machinery'
+                ], icon: 'fa-microchip' },
+            { id: 104, name: 'Inductive Proximity Sensor', category: 'Electrical', subcategory: 'Sensors',
+                description: 'Detects metal objects without contact.', specs: ['8mm', 'PNP', 'NO'],
+                applications: ['Conveyors', 'Position Detection', 'Automation'], icon: 'fa-ruler' },
+            { id: 105, name: 'Terminal Block 10A', category: 'Electrical', subcategory: 'Panel Components',
+                description: 'Feed-through terminal block for panel wiring.',
+                specs: ['10A', '2.5mm²', 'Screw Clamp'], applications: ['Panels', 'Control Wiring', 'Distribution'],
+                icon: 'fa-plug' },
+            { id: 106, name: 'Cable Gland M20', category: 'Electrical', subcategory: 'Cable Management',
+                description: 'Industrial cable gland for panel entry protection.',
+                specs: ['M20', 'IP68', 'Nylon'], applications: ['Panels', 'Junction Boxes', 'Cable Entry'],
+                icon: 'fa-screwdriver' },
+
+            // ---- BEARINGS ----
+            { id: 200, name: 'Deep Groove Ball Bearing 6204', category: 'Bearings', subcategory: 'Ball Bearings',
+                description: 'Single row deep groove ball bearing for general applications.',
+                specs: ['20x47x14mm', 'Steel', 'C3 Clearance'], applications: ['Electric Motors', 'Pumps', 'Conveyors'],
+                icon: 'fa-circle' },
+
+            // ---- CUTTING TOOLS ----
+            { id: 300, name: 'Drill Bit Set', category: 'Cutting Tools', subcategory: 'Drill Bits',
+                description: 'Industrial drill bit set for various materials.',
+                specs: ['HSS', 'Metric', 'Set of 13'], applications: ['Drilling', 'Workshop', 'Maintenance'],
+                icon: 'fa-drill' },
+
+            // ---- SAFETY ITEMS ----
+            { id: 400, name: 'Safety Glasses', category: 'Safety Items', subcategory: 'Personal Protection',
+                description: 'Industrial safety glasses for eye protection.',
+                specs: ['Polycarbonate', 'Anti-Scratch', 'UV Protection'], applications: ['Workshop', 'Construction',
+                    'Industrial'
+                ], icon: 'fa-glasses' },
+        ];
+
+        // ---- CATEGORIES ----
+        const categories = [
+            'Fasteners', 'Stainless Steel Fasteners', 'Electrical', 'Tools', 'Cutting Tools',
+            'Safety Items', 'Bearings'
+        ];
+
+        // ---- INDUSTRIES ----
+        const industriesList = [
+            'Construction', 'Automotive', 'Infrastructure', 'Machinery', 'Heavy Engineering',
+            'Manufacturing', 'Electrical Contracting', 'Industrial Automation', 'OEM',
+            'Control Panel Manufacturing', 'Machine Builders', 'Engineering Industries',
+            'Warehousing', 'Commercial Projects', 'Aerospace', 'Marine'
+        ];
+
+        // ---- BRANDS ----
+        const brandsList = [
+            'Festo', 'SMC', 'Parker', 'Enerpac', 'SKF', 'NTN', 'Hiwin', 'KRS',
+            'Bosch', 'Trakita', 'Siemens', 'ABB', 'Schneider Electric', 'L&T',
+            'Legrand', 'Havells', 'Allen Bradley', 'Phoenix Contact', 'Weidmüller'
+        ];
+
+        // ---- CUSTOMERS ----
+        const customersList = [
+            'TATA', 'Reliance', 'Adani', 'L&T', 'BHEL', 'Siemens', 'ABB',
+            'Schneider Electric', 'Bosch', 'Honeywell', 'Cummins', 'JSW', 'SAIL', 'Bajaj'
+        ];
+
+        // ---- FAQ ----
+        const faqData = [
+            { q: 'What industrial products do you supply?',
+                a: 'We supply a comprehensive range including industrial fasteners (bolts, nuts, washers, screws, rivets), electrical components (MCB, MCCB, contactors, relays), automation components (PLC, HMI, VFD, sensors), tools, safety items, bearings, and cutting tools.' },
+            { q: 'Do you supply automation components?',
+                a: 'Yes, we supply PLC, HMI, VFD, servo drives, sensors, pneumatic cylinders, valves, and complete automation solutions from trusted brands.' },
+            { q: 'Can I request a quotation?',
+                a: 'Absolutely. You can request a quote through our contact form, by WhatsApp, or by calling us. We respond quickly to all enquiries.' },
+            { q: 'Do you support bulk orders?',
+                a: 'Yes, we support bulk and regular supply requirements for industrial customers, OEMs, panel builders, and contractors across India.' },
+            { q: 'Can you source specific components?',
+                a: 'Yes. Share your part number, drawing, specification sheet, or sample with us and our team will coordinate suitable sourcing.' },
+            { q: 'What brands do you work with?',
+                a: 'We work with leading brands like Festo, SMC, Parker, SKF, Bosch, Siemens, ABB, Schneider, and many more. Availability depends on current sourcing.' },
+        ];
+
+        // ============================================================
+        //  DOM REFS
+        // ============================================================
+        const $ = (s) => document.querySelector(s);
+        const $$ = (s) => document.querySelectorAll(s);
+
+        const header = $('#header');
+        const navLinks = $('#navLinks');
+        const hamburger = $('#hamburger');
+        const searchInput = $('#searchInput');
+        const categoryFilter = $('#categoryFilter');
+        const clearFilters = $('#clearFilters');
+        const productsGrid = $('#productsGrid');
+        const categoriesGrid = $('#categoriesGrid');
+        const industriesGrid = $('#industriesGrid');
+        const brandsGrid = $('#brandsGrid');
+        const customersGrid = $('#customersGrid');
+        const faqList = $('#faqList');
+        const modal = $('#productModal');
+        const modalClose = $('#modalClose');
+        const modalImage = $('#modalImage');
+        const modalCategory = $('#modalCategory');
+        const modalName = $('#modalName');
+        const modalDesc = $('#modalDesc');
+        const modalSpecs = $('#modalSpecs');
+        const modalApps = $('#modalApps');
+        const modalQuoteBtn = $('#modalQuoteBtn');
+        const modalWhatsappBtn = $('#modalWhatsappBtn');
+        const contactForm = $('#contactForm');
+
+        let currentProducts = [...products];
+
+        // ============================================================
+        //  RENDER CATEGORIES
+        // ============================================================
+        function renderCategories() {
+            const icons = {
+                'Fasteners': 'fa-bolt',
+                'Stainless Steel Fasteners': 'fa-shield-alt',
+                'Electrical': 'fa-bolt',
+                'Tools': 'fa-tools',
+                'Cutting Tools': 'fa-cut',
+                'Safety Items': 'fa-hard-hat',
+                'Bearings': 'fa-circle',
+                'Welding Equipment': 'fa-fire',
+                'Fittings': 'fa-pipe',
+                'Packing Items': 'fa-box'
+            };
+            categoriesGrid.innerHTML = categories.map(c => `
+                        <div class="cat-card" data-category="${c}">
+                            <i class="fas ${icons[c] || 'fa-cube'}"></i>
+                            <h4>${c}</h4>
+                            <small>${products.filter(p=>p.category===c).length} products</small>
+                        </div>
+                    `).join('');
+            categoriesGrid.querySelectorAll('.cat-card').forEach(el => {
+                el.addEventListener('click', () => {
+                    categoryFilter.value = el.dataset.category;
+                    filterProducts();
+                    document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        }
+
+        // ============================================================
+        //  RENDER PRODUCTS
+        // ============================================================
+        function renderProducts(list) {
+            if (!list || list.length === 0) {
+                productsGrid.innerHTML =
+                    `<div class="no-results"><i class="fas fa-search"></i><h3>No products found</h3><p>Try adjusting your search or filter.</p><button class="btn btn-outline btn-sm" onclick="resetFilters()" style="margin-top:10px;"><i class="fas fa-undo"></i> Reset Filters</button></div>`;
+                return;
+            }
+            productsGrid.innerHTML = list.map(p => `
+                        <div class="product-card" data-id="${p.id}">
+                            <div class="img-box">
+                                ${p.img ? `<img src="${p.img}" alt="${p.name}" loading="lazy" />` : `<i class="fas ${p.icon || 'fa-cube'} fallback-icon"></i>`}
+                            </div>
+                            <div class="body">
+                                <span class="cat-tag">${p.category}</span>
+                                <h4>${p.name}</h4>
+                                <p>${p.description.substring(0, 55)}${p.description.length > 55 ? '...' : ''}</p>
+                                <div class="specs">${p.specs.slice(0,2).map(s => `<span><i class="fas fa-check-circle"></i> ${s}</span>`).join('')}</div>
+                                <div class="actions">
+                                    <button class="btn btn-outline btn-sm view-product" data-id="${p.id}"><i class="fas fa-eye"></i> Details</button>
+                                    <button class="btn btn-primary btn-sm quote-product" data-id="${p.id}"><i class="fas fa-file-invoice"></i> Quote</button>
+                                </div>
+                            </div>
+                        </div>
+                    `).join('');
+
+            productsGrid.querySelectorAll('.view-product').forEach(b => b.addEventListener('click', e => {
+                e.stopPropagation();
+                openModal(parseInt(b.dataset.id));
+            }));
+            productsGrid.querySelectorAll('.quote-product').forEach(b => b.addEventListener('click', e => {
+                e.stopPropagation();
+                const p = products.find(x => x.id === parseInt(b.dataset.id));
+                if (p) openQuote(p);
+            }));
+            productsGrid.querySelectorAll('.product-card').forEach(c => c.addEventListener('click', () => {
+                openModal(parseInt(c.dataset.id));
+            }));
+        }
+
+        // ============================================================
+        //  FILTER
+        // ============================================================
+        function filterProducts() {
+            const q = searchInput.value.toLowerCase().trim();
+            const cat = categoryFilter.value;
+            let filtered = products.filter(p => {
+                const match = p.name.toLowerCase().includes(q) || p.category.toLowerCase().includes(q) ||
+                    p.subcategory.toLowerCase().includes(q) ||
+                    p.specs.some(s => s.toLowerCase().includes(q)) ||
+                    p.applications.some(a => a.toLowerCase().includes(q));
+                const matchCat = cat === '' || p.category === cat;
+                return match && matchCat;
+            });
+            currentProducts = filtered;
+            renderProducts(filtered);
+        }
+
+        function resetFilters() {
+            searchInput.value = '';
+            categoryFilter.value = '';
+            filterProducts();
+        }
+
+        // ============================================================
+        //  RENDER INDUSTRIES
+        // ============================================================
+        function renderIndustries() {
+            industriesGrid.innerHTML = industriesList.map(i =>
+                `<div class="industry-chip"><i class="fas fa-industry"></i> ${i}</div>`).join('');
+        }
+
+        // ============================================================
+        //  RENDER BRANDS
+        // ============================================================
+        function renderBrands() {
+            brandsGrid.innerHTML = brandsList.map(b =>
+                `<div class="brand-item"><i class="fas fa-check-circle"></i> ${b}</div>`).join('');
+        }
+
+        // ============================================================
+        //  RENDER CUSTOMERS
+        // ============================================================
+        function renderCustomers() {
+            customersGrid.innerHTML = customersList.map(c =>
+                `<div class="customer-logo"><i class="fas fa-building"></i> ${c}</div>`).join('');
+        }
+
+        // ============================================================
+        //  RENDER FAQ
+        // ============================================================
+        function renderFAQ() {
+            faqList.innerHTML = faqData.map((item, idx) => `
+                        <div class="faq-item" data-idx="${idx}">
+                            <div class="faq-q"><span>${item.q}</span><i class="fas fa-chevron-down"></i></div>
+                            <div class="faq-a">${item.a}</div>
+                        </div>
+                    `).join('');
+            faqList.querySelectorAll('.faq-item').forEach(el => {
+                el.querySelector('.faq-q').addEventListener('click', () => {
+                    const open = el.classList.contains('open');
+                    faqList.querySelectorAll('.faq-item').forEach(f => f.classList.remove('open'));
+                    if (!open) el.classList.add('open');
+                });
+            });
+            const first = faqList.querySelector('.faq-item');
+            if (first) first.classList.add('open');
+        }
+
+        // ============================================================
+        //  MODAL
+        // ============================================================
+        function openModal(id) {
+            const p = products.find(x => x.id === id);
+            if (!p) return;
+            modalImage.innerHTML = p.img ? `<img src="${p.img}" alt="${p.name}" />` :
+                `<i class="fas ${p.icon || 'fa-cube'} fallback-icon"></i>`;
+            modalCategory.textContent = p.category + ' / ' + p.subcategory;
+            modalName.textContent = p.name;
+            modalDesc.textContent = p.description;
+            modalSpecs.innerHTML = p.specs.map(s => `<li><i class="fas fa-check-circle"></i> ${s}</li>`).join('');
+            modalApps.innerHTML = p.applications.map(a =>
+                `<span class="industry-chip" style="background:var(--light);border:none;padding:4px 14px;font-size:0.8rem;">${a}</span>`
+                ).join('');
+            modalQuoteBtn.onclick = (e) => { e.preventDefault();
+                closeModal();
+                document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+                document.getElementById('cfProduct').value = p.name + ' (' + p.category + ')'; };
+            modalWhatsappBtn.href =
+                `https://wa.me/${CONFIG.whatsapp.replace(/[^0-9]/g, '')}?text=${encodeURIComponent('Hello SLV Enterprises, I am interested in: ' + p.name + ' (' + p.category + '). Please share pricing and availability.')}`;
+            modalWhatsappBtn.target = '_blank';
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() { modal.classList.remove('active');
+            document.body.style.overflow = ''; }
+        modalClose.addEventListener('click', closeModal);
+        modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+        function openQuote(p) {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('cfProduct').value = p.name + ' (' + p.category + ')';
+            document.getElementById('cfMessage').value = 'I am interested in: ' + p.name + '\nCategory: ' + p
+                .category + '\nPlease provide pricing and availability.';
+        }
+
+        // ============================================================
+        //  CONTACT FORM
+        // ============================================================
+        contactForm.addEventListener('submit', e => {
+            e.preventDefault();
+            const name = document.getElementById('cfName').value.trim();
+            const phone = document.getElementById('cfPhone').value.trim();
+            if (!name || !phone) { alert('Please fill in Name and Phone fields.'); return; }
+            const company = document.getElementById('cfCompany').value.trim();
+            const email = document.getElementById('cfEmail').value.trim();
+            const product = document.getElementById('cfProduct').value.trim();
+            const qty = document.getElementById('cfQty').value.trim();
+            const reqType = document.getElementById('cfRequirement').value;
+            const msg = document.getElementById('cfMessage').value.trim();
+            const body =
+                `Name: ${name}\nCompany: ${company || 'N/A'}\nPhone: ${phone}\nEmail: ${email || 'N/A'}\nProduct: ${product || 'N/A'}\nQuantity: ${qty || 'N/A'}\nRequirement: ${reqType || 'N/A'}\nMessage: ${msg || 'No additional message.'}`;
+            window.open(
+                `mailto:${CONFIG.email}?subject=${encodeURIComponent('Enquiry from ' + name)}&body=${encodeURIComponent(body)}`,
+                '_blank');
+            window.open(
+                `https://wa.me/${CONFIG.whatsapp.replace(/[^0-9]/g, '')}?text=${encodeURIComponent('*New Enquiry from ' + name + '*\n' + body)}`,
+                '_blank');
+            alert('Thank you! Your enquiry has been sent. We will get back to you shortly.');
+            contactForm.reset();
+        });
+
+        // ============================================================
+        //  NAV
+        // ============================================================
+        document.querySelectorAll('[data-section]').forEach(el => {
+            el.addEventListener('click', e => {
+                const target = el.dataset.section;
+                const section = document.getElementById(target);
+                if (section) { e.preventDefault();
+                    section.scrollIntoView({ behavior: 'smooth' });
+                    navLinks.classList.remove('open');
+                    document.querySelectorAll('[data-section]').forEach(a => a.classList.remove('active'));
+                    el.classList.add('active'); }
+            });
+        });
+
+        window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 20));
+        hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+        // ============================================================
+        //  FILTER EVENTS
+        // ============================================================
+        searchInput.addEventListener('input', filterProducts);
+        categoryFilter.addEventListener('change', filterProducts);
+        clearFilters.addEventListener('click', resetFilters);
+
+        // ============================================================
+        //  POPULATE CATEGORY FILTER
+        // ============================================================
+        categories.forEach(c => { const o = document.createElement('option');
+            o.value = c;
+            o.textContent = c;
+            categoryFilter.appendChild(o); });
+
+        // ============================================================
+        //  WHATSAPP
+        // ============================================================
+        function setupWhatsapp(sel, msg) {
+            const el = document.querySelector(sel);
+            if (!el) return;
+            el.href = `https://wa.me/${CONFIG.whatsapp.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(msg || 'Hello SLV Enterprises, I have an enquiry about your industrial products.')}`;
+            el.target = '_blank';
+        }
+        setupWhatsapp('#heroWhatsapp', 'Hello SLV Enterprises, I would like to know more about your industrial and electrical products.');
+        setupWhatsapp('#navWhatsapp', 'Hello SLV Enterprises, I have an enquiry.');
+        setupWhatsapp('#modalWhatsappBtn', '');
+
+        // ============================================================
+        //  INIT
+        // ============================================================
+        renderCategories();
+        renderProducts(products);
+        renderIndustries();
+        renderBrands();
+        renderCustomers();
+        renderFAQ();
+
+        console.log('SLV Enterprises website loaded.');
+        console.log('Total products:', products.length);
+        console.log('Categories:', categories.length);
+
+        window.resetFilters = resetFilters;
+        window.openModal = openModal;
+        window.closeModal = closeModal;
+        window.openQuote = openQuote;
+    </script>
+</body>
+</html>
